@@ -40,7 +40,7 @@ public final class PromenadeBiomeCreator {
 		effectBuilder.fogColor(12638463);
 		effectBuilder.skyColor(getSkyColor(0.8F));
 		effectBuilder.waterColor(155336);
-		effectBuilder.waterFogColor(541);
+		effectBuilder.waterFogColor(155336);
 		effectBuilder.moodSound(BiomeMoodSound.CAVE);
 		effectBuilder.foliageColor(15232304);
 		effectBuilder.grassColor(15443554);
@@ -65,7 +65,7 @@ public final class PromenadeBiomeCreator {
 		effectBuilder.fogColor(12638463);
 		effectBuilder.skyColor(getSkyColor(0.6F));
 		effectBuilder.waterColor(6459391);
-		effectBuilder.waterFogColor(2170954);
+		effectBuilder.waterFogColor(6459391);
 		effectBuilder.moodSound(BiomeMoodSound.CAVE);
 		effectBuilder.foliageColor(15768259);
 		return createForest(generationBuilder.build(), effectBuilder.build(), 0.6F, 0.4F);
@@ -123,7 +123,7 @@ public final class PromenadeBiomeCreator {
 		generationBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, ConfiguredFeatures.SEAGRASS_RIVER);
 
 		DefaultBiomeFeatures.addFrozenTopLayer(generationBuilder);
-		return (new Biome.Builder()).precipitation(Biome.Precipitation.RAIN).category(Biome.Category.RIVER).depth(-0.5F).scale(0.0F).temperature(0.5F).downfall(0.5F).effects((new BiomeEffects.Builder()).waterColor(4159204).waterFogColor(329011).fogColor(12638463).skyColor(getSkyColor(0.5F)).moodSound(BiomeMoodSound.CAVE).build()).spawnSettings(builder.build()).generationSettings(generationBuilder.build()).build();
+		return (new Biome.Builder()).precipitation(Biome.Precipitation.RAIN).category(Biome.Category.RIVER).depth(-0.5F).scale(0.0F).temperature(0.5F).downfall(0.5F).effects((new BiomeEffects.Builder()).waterColor(4159204).waterFogColor(4159204).fogColor(12638463).skyColor(getSkyColor(0.5F)).moodSound(BiomeMoodSound.CAVE).build()).spawnSettings(builder.build()).generationSettings(generationBuilder.build()).build();
 	}
 
 	private static GenerationSettings.Builder composeForestGenerationSettings() {
@@ -329,7 +329,7 @@ public final class PromenadeBiomeCreator {
 	private static Biome createEndBiome(float depth, float scale, GenerationSettings.Builder generationBuilder, SpawnSettings.Builder spawnSettings) {
 		BiomeEffects.Builder effects = new BiomeEffects.Builder();
 		effects.waterColor(4159204);
-		effects.waterFogColor(329011);
+		effects.waterFogColor(4159204);
 		effects.fogColor(10518688);
 		effects.skyColor(0);
 		effects.moodSound(BiomeMoodSound.CAVE);
